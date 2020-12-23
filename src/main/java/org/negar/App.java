@@ -14,6 +14,8 @@ public class App {
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext(ComponentScanConfig.class);
 
+
+
         management = context.getBean(StudentManagement.class);
         inputService = context.getBean(UserInputService.class);
 
